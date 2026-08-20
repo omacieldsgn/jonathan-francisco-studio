@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #F5F1EA;
+  --color-brand-hover: #E4DEC5;
+  --color-brand-pressed: #C4B9A1;
+  --color-bg-dark: #0D0D0D;
+  --color-surface-1: #161616;
+  --color-surface-2: #202020;
+  --color-surface-3: #2B2B2B;
+  --color-border-custom: #333333;
+  --color-border-strong: #444444;
+  --color-text-primary: #F5F1EA;
+  --color-text-secondary: #D0C6B8;
+  --color-text-muted: #8E8272;
+  --color-text-on-brand: #0D0D0D;
+  --color-success-custom: #55D98B;
+  --color-warning-custom: #FFB648;
+  --color-danger-custom: #FF5E63;
+  --color-info-custom: #67A7FF;
+
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: #0D0D0D;
+    color: #F5F1EA;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* Custom elegant scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0D0D0D;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8B6F52;
+  }
+}
+
+/* Custom fade in animation utilities */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Skeleton animation */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 1.8s ease-in-out infinite;
+}
+
+/* Custom typography override: Force display serif headings to always render in elegant Regular (400) */
+.font-display {
+  font-weight: 400 !important;
+  letter-spacing: -0.01em;
+}

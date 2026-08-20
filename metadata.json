@@ -1,0 +1,6 @@
+{
+  "name": "Jonathan Francisco Studio",
+  "description": "Sistema de agendamento online exclusivo de barbearia com design Noir Signal, controle de disponibilidade, gestão de barbeiros, serviços e painel de controle administrativo completo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

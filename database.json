@@ -1,0 +1,381 @@
+{
+  "business": {
+    "id": "biz_jonathan",
+    "name": "Jonathan Francisco Studio",
+    "slug": "jonathan-francisco-studio",
+    "phone": "(51) 99888-7766",
+    "whatsapp": "(51) 99888-7766",
+    "email": "contato@macieldsgn.com",
+    "instagramUrl": "https://instagram.com/jonathanfranciscostudio",
+    "address": "R. Joaquim Nabuco, 828 — Centro, Novo Hamburgo — RS, 93310-002",
+    "timezone": "America/Sao_Paulo",
+    "logoUrl": "",
+    "coverUrl": "",
+    "status": "active"
+  },
+  "categories": [
+    {
+      "id": "cat_corte",
+      "name": "Corte",
+      "slug": "corte",
+      "displayOrder": 1,
+      "active": true
+    },
+    {
+      "id": "cat_barba",
+      "name": "Barba",
+      "slug": "barba",
+      "displayOrder": 2,
+      "active": true
+    },
+    {
+      "id": "cat_combos",
+      "name": "Combos",
+      "slug": "combos",
+      "displayOrder": 3,
+      "active": true
+    },
+    {
+      "id": "cat_outros",
+      "name": "Acabamentos",
+      "slug": "acabamentos",
+      "displayOrder": 4,
+      "active": true
+    }
+  ],
+  "services": [
+    {
+      "id": "serv_corte",
+      "categoryId": "cat_corte",
+      "name": "Corte Masculino Sênior",
+      "slug": "corte-masculino",
+      "shortDescription": "Corte moderno, lavagem e finalização premium.",
+      "description": "Corte personalizado de alta precisão com lavagem refrescante, massagem capilar e finalização com pomadas Noir Signal.",
+      "durationMinutes": 45,
+      "bufferBeforeMinutes": 0,
+      "bufferAfterMinutes": 5,
+      "priceCents": 6000,
+      "onlineBookingEnabled": true,
+      "active": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "serv_barba",
+      "categoryId": "cat_barba",
+      "name": "Barba Terapia Noir",
+      "slug": "barba-terapia",
+      "shortDescription": "Barbear clássico com toalha quente e massagem.",
+      "description": "Barbeamento tradicional com navalha, esfoliação, massagem facial, óleo hidratante e toalha quente aromática.",
+      "durationMinutes": 30,
+      "bufferBeforeMinutes": 0,
+      "bufferAfterMinutes": 5,
+      "priceCents": 4500,
+      "onlineBookingEnabled": true,
+      "active": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "serv_corte_barba",
+      "categoryId": "cat_combos",
+      "name": "Combo Imperial (Corte + Barba)",
+      "slug": "combo-imperial",
+      "shortDescription": "O visual completo com desconto exclusivo.",
+      "description": "Nosso serviço mais pedido. Unimos o Corte Sênior com a Barba Terapia Noir em uma sessão de puro estilo.",
+      "durationMinutes": 75,
+      "bufferBeforeMinutes": 0,
+      "bufferAfterMinutes": 10,
+      "priceCents": 9500,
+      "promotionalPriceCents": 9000,
+      "onlineBookingEnabled": true,
+      "active": true,
+      "displayOrder": 3
+    },
+    {
+      "id": "serv_corte_sobrancelha",
+      "categoryId": "cat_outros",
+      "name": "Corte + Sobrancelha",
+      "slug": "corte-sobrancelha",
+      "shortDescription": "Corte completo e design de sobrancelha na navalha.",
+      "description": "Corte sênior de cabelo aliado ao alinhamento preciso das sobrancelhas com navalha para uma expressão mais forte.",
+      "durationMinutes": 45,
+      "bufferBeforeMinutes": 0,
+      "bufferAfterMinutes": 5,
+      "priceCents": 7500,
+      "onlineBookingEnabled": true,
+      "active": true,
+      "displayOrder": 4
+    },
+    {
+      "id": "serv_combo_completo",
+      "categoryId": "cat_combos",
+      "name": "Noir Legend (Corte + Barba + Sobrancelha)",
+      "slug": "combo-noir-legend",
+      "shortDescription": "A experiência premium definitiva do estúdio.",
+      "description": "O pacote completo. Cabelo lavado e modelado, barba relaxante com toalha quente e design profissional de sobrancelha.",
+      "durationMinutes": 90,
+      "bufferBeforeMinutes": 0,
+      "bufferAfterMinutes": 10,
+      "priceCents": 12000,
+      "promotionalPriceCents": 11000,
+      "onlineBookingEnabled": true,
+      "active": true,
+      "displayOrder": 5
+    }
+  ],
+  "professionals": [
+    {
+      "id": "prof_jonathan",
+      "name": "Jonathan Francisco",
+      "bio": "Criador do estúdio, visagista e barbeiro sênior especializado em tesoura clássica e cortes modernos.",
+      "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=256&auto=format&fit=crop",
+      "specialties": [
+        "Cortes Clássicos",
+        "Visagismo",
+        "Navalha Livre"
+      ],
+      "services": [
+        "serv_corte",
+        "serv_barba",
+        "serv_corte_barba",
+        "serv_corte_sobrancelha",
+        "serv_combo_completo"
+      ],
+      "active": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "prof_marcus",
+      "name": "Marcus Vinícius",
+      "bio": "Especialista em fade degradê, barboterapia de alta performance e técnicas de texturização capilar.",
+      "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=256&auto=format&fit=crop",
+      "specialties": [
+        "Degradê Navalhado",
+        "Barboterapia",
+        "Hair Tattoo"
+      ],
+      "services": [
+        "serv_corte",
+        "serv_barba",
+        "serv_corte_barba",
+        "serv_corte_sobrancelha",
+        "serv_combo_completo"
+      ],
+      "active": true,
+      "displayOrder": 2
+    }
+  ],
+  "businessHours": [
+    {
+      "weekday": 0,
+      "opensAt": "09:00",
+      "closesAt": "13:00",
+      "active": false
+    },
+    {
+      "weekday": 1,
+      "opensAt": "09:00",
+      "closesAt": "19:00",
+      "active": true
+    },
+    {
+      "weekday": 2,
+      "opensAt": "09:00",
+      "closesAt": "19:00",
+      "active": true
+    },
+    {
+      "weekday": 3,
+      "opensAt": "09:00",
+      "closesAt": "19:00",
+      "active": true
+    },
+    {
+      "weekday": 4,
+      "opensAt": "09:00",
+      "closesAt": "19:00",
+      "active": true
+    },
+    {
+      "weekday": 5,
+      "opensAt": "09:00",
+      "closesAt": "19:00",
+      "active": true
+    },
+    {
+      "weekday": 6,
+      "opensAt": "09:00",
+      "closesAt": "18:00",
+      "active": true
+    }
+  ],
+  "professionalHours": [
+    {
+      "professionalId": "prof_jonathan",
+      "weekday": 1,
+      "startsAt": "09:00",
+      "endsAt": "19:00",
+      "active": true
+    },
+    {
+      "professionalId": "prof_jonathan",
+      "weekday": 2,
+      "startsAt": "09:00",
+      "endsAt": "19:00",
+      "active": true
+    },
+    {
+      "professionalId": "prof_jonathan",
+      "weekday": 3,
+      "startsAt": "09:00",
+      "endsAt": "19:00",
+      "active": true
+    },
+    {
+      "professionalId": "prof_jonathan",
+      "weekday": 4,
+      "startsAt": "09:00",
+      "endsAt": "19:00",
+      "active": true
+    },
+    {
+      "professionalId": "prof_jonathan",
+      "weekday": 5,
+      "startsAt": "09:00",
+      "endsAt": "19:00",
+      "active": true
+    },
+    {
+      "professionalId": "prof_jonathan",
+      "weekday": 6,
+      "startsAt": "09:00",
+      "endsAt": "18:00",
+      "active": true
+    },
+    {
+      "professionalId": "prof_marcus",
+      "weekday": 1,
+      "startsAt": "09:00",
+      "endsAt": "19:00",
+      "active": true
+    },
+    {
+      "professionalId": "prof_marcus",
+      "weekday": 2,
+      "startsAt": "09:00",
+      "endsAt": "19:00",
+      "active": true
+    },
+    {
+      "professionalId": "prof_marcus",
+      "weekday": 3,
+      "startsAt": "09:00",
+      "endsAt": "19:00",
+      "active": true
+    },
+    {
+      "professionalId": "prof_marcus",
+      "weekday": 4,
+      "startsAt": "09:00",
+      "endsAt": "19:00",
+      "active": true
+    },
+    {
+      "professionalId": "prof_marcus",
+      "weekday": 5,
+      "startsAt": "09:00",
+      "endsAt": "19:00",
+      "active": true
+    },
+    {
+      "professionalId": "prof_marcus",
+      "weekday": 6,
+      "startsAt": "09:00",
+      "endsAt": "18:00",
+      "active": true
+    },
+    {
+      "professionalId": "prof_douglas",
+      "weekday": 1,
+      "startsAt": "09:00",
+      "endsAt": "19:00",
+      "active": true
+    },
+    {
+      "professionalId": "prof_douglas",
+      "weekday": 2,
+      "startsAt": "09:00",
+      "endsAt": "19:00",
+      "active": true
+    },
+    {
+      "professionalId": "prof_douglas",
+      "weekday": 3,
+      "startsAt": "09:00",
+      "endsAt": "19:00",
+      "active": true
+    },
+    {
+      "professionalId": "prof_douglas",
+      "weekday": 4,
+      "startsAt": "09:00",
+      "endsAt": "19:00",
+      "active": true
+    },
+    {
+      "professionalId": "prof_douglas",
+      "weekday": 5,
+      "startsAt": "09:00",
+      "endsAt": "19:00",
+      "active": true
+    },
+    {
+      "professionalId": "prof_douglas",
+      "weekday": 6,
+      "startsAt": "09:00",
+      "endsAt": "18:00",
+      "active": true
+    }
+  ],
+  "scheduleExceptions": [],
+  "appointments": [],
+  "appointmentItems": [],
+  "waitlist": [],
+  "coupons": [
+    {
+      "id": "cup_noir10",
+      "code": "NOIR10",
+      "discountType": "percentage",
+      "discountValue": 10,
+      "startsAt": "2026-01-01T00:00:00Z",
+      "endsAt": "2027-12-31T23:59:59Z",
+      "maxUses": 100,
+      "currentUses": 5,
+      "minTotalCents": 0,
+      "active": true
+    },
+    {
+      "id": "cup_estudio20",
+      "code": "ESTUDIO20",
+      "discountType": "fixed",
+      "discountValue": 2000,
+      "startsAt": "2026-01-01T00:00:00Z",
+      "endsAt": "2027-12-31T23:59:59Z",
+      "maxUses": 50,
+      "currentUses": 2,
+      "minTotalCents": 8000,
+      "active": true
+    }
+  ],
+  "reviews": [],
+  "users": [
+    {
+      "id": "admin",
+      "role": "admin",
+      "fullName": "Jonathan Admin",
+      "phone": "(51) 99999-9999",
+      "email": "contato@macieldsgn.com",
+      "avatarUrl": "",
+      "status": "active"
+    }
+  ]
+}

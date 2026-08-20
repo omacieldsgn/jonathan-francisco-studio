@@ -1,0 +1,28 @@
+{
+  "short_name": "Studio Jota",
+  "name": "Jonathan Francisco Studio",
+  "description": "Agendamento online exclusivo no Jonathan Francisco Studio. Barbearia com conceito premium Noir Signal.",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "/favicon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/favicon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#121212",
+  "theme_color": "#121212",
+  "display": "standalone",
+  "orientation": "portrait"
+}
