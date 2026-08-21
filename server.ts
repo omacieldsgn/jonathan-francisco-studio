@@ -28,7 +28,7 @@ const prisma = new PrismaClient({ adapter });
 
 const app = express();
 app.use(express.json());
-const PORT = process.env.PORT || 3000;
+const PORT = Number.parseInt(process.env.PORT ?? "3000", 10);
 
 // Availability calculation helpers
 function timeToMinutes(timeStr: string): number {
@@ -611,6 +611,7 @@ app.post("/api/appointments", async (req, res) => {
     }
 
     const shortCode = `JF-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
+    const createdAt = new Date().toISOString();
     
     const newAppointment = await prisma.appointment.create({
       data: {
@@ -620,7 +621,9 @@ app.post("/api/appointments", async (req, res) => {
         customerName: customer.fullName,
         customerPhone: customer.phone,
         customerEmail: customer.email,
-        professionalId: selectedProfId,
+        professional: {
+          connect: { id: selectedProfId }
+        },
         professionalName: professional.name,
         startsAt: startsAtIso,
         endsAt: endsAtIso,
@@ -632,6 +635,8 @@ app.post("/api/appointments", async (req, res) => {
         paymentStatus: "pending",
         customerNote,
         source: source || "web",
+        createdAt,
+        updatedAt: createdAt,
         items: {
           create: services.map((s, idx) => ({
             id: `item_${Date.now()}_${idx}`,

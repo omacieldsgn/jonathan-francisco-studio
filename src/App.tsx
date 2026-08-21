@@ -99,7 +99,9 @@ export default function App() {
         const res = await fetch("/api/business");
         if (!res.ok) throw new Error("API not responsive");
         const data = await res.json();
-        setBusiness(data);
+        // A new Supabase project starts empty until the seed is applied.
+        // Keep the app usable while the business record is not present yet.
+        setBusiness(data ?? DEFAULT_BUSINESS);
       } catch (err) {
         console.error("Error loading business configurations, applying high-fidelity client fallback:", err);
         setBusiness(DEFAULT_BUSINESS);
